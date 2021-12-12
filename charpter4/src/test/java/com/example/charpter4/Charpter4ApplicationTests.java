@@ -36,6 +36,7 @@ class Charpter4ApplicationTests {
         );
 
         //流的定义： 从支持数据处理操作的源生成的元素序列
+        //流的使用一般包括三件事情： 1.数据源   2.中间操作  3.终端操作
 
         //找出所有的蔬菜
         List<Dish> vegetables = menu.stream().filter(Dish::isVegetarian).collect(Collectors.toList());
